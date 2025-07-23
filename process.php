@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+			background-color: #ffd8d8ff; /* light red for warning */
+		}
+    </style>
+</head>
+<body>
 <?php
     echo "<h1>Form Submission Result</h1>";
     if (!isset($_POST['submit'])) {
@@ -95,3 +108,6 @@
     }
 
 ?>
+
+</body>
+</html>
