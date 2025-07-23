@@ -20,6 +20,18 @@
         <input type="text" name="month" id="month" placeholder="Mon" size="1" > -
         <input type="text" name="year" id="year" placeholder="Year" size="1" > (DD-MM-YYYY) <br><br>
 
+        <label for="mobile">Mobile no.: +95 - </label>
+        <input type="text" id="mobile" name="mobile" ><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female <br><br>
         </form>
 </body>
 </html>
