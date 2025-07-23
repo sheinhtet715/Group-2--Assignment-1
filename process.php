@@ -20,7 +20,11 @@
     $password    = $_POST['password']   ;
     $gender      = $_POST['gender']    ?? '';
 
-
+    $course      = $_POST['course']     ?? 'select';
+    $department  = $_POST['department'] ?? '';
+    $city        = $_POST['city']       ;
+    $address     = $_POST['address']    ;
+    
     if ($firstname === '') {
         echo "<p style='color: red;'>fname is required.</p>";
     }
@@ -57,6 +61,17 @@
         echo "<p style='color: red;'>gender is required.</p>";
     } 
 
+    if ($course === 'select') {
+        echo "<p style='color: red;'>course is required.</p>";
+    }
+
+    if ($city === '') {
+        echo "<p style='color: red;'>city is required.</p>";
+    }
+
+    if ($address === '') {
+        echo "<p style='color: red;'>address is required.</p>";
+    }
 
     echo "Name: $firstname $lastname<br>";
     echo "Father's Name: $fathername<br>";
@@ -69,4 +84,13 @@
     }else {
         echo "Gender: $gender<br>";
     }
+
+    echo "Course: $course<br>";
+    echo "City: $city<br>";
+    echo "Address: $address<br>";
+    echo "Department: $department<br>";
+    if ($department === '') {
+        echo "<p style='color: red;'>No department selected.</p>";
+    }
+
 ?>
