@@ -15,6 +15,10 @@
     $month       = $_POST['month']      ;
     $year        = $_POST['year']       ;
 
+    $mobile      = $_POST['mobile']     ;
+    $email       = $_POST['email']      ;
+    $password    = $_POST['password']   ;
+    $gender      = $_POST['gender']    ?? '';
 
 
     if ($firstname === '') {
@@ -37,8 +41,32 @@
         echo "<p style='color: red;'>year is required.</p>";
     }
 
+    if ($mobile === '') {
+        echo "<p style='color: red;'>mobile is required.</p>";
+    }
+
+    if ($email === '') {
+        echo "<p style='color: red;'>email is required.</p>";
+    }
+
+    if ($password === '') {
+        echo "<p style='color: red;'>password is required.</p>";
+    }
+
+    if ($gender === '') {   
+        echo "<p style='color: red;'>gender is required.</p>";
+    } 
+
 
     echo "Name: $firstname $lastname<br>";
     echo "Father's Name: $fathername<br>";
     echo "DOB: $dob<br>";
+    echo "Mobile: +91- $mobile<br>";
+    echo "Email: $email<br>";
+
+    if ($gender === '') {
+        echo 'Gender: ' . $_POST['gender'] . '<br>';
+    }else {
+        echo "Gender: $gender<br>";
+    }
 ?>
