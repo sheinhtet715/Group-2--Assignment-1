@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body {
-			background-color: #ffd8d8ff; /* light red for warning */
+			background-color: #ffd8d8ff; 
 		}
     </style>
 </head>
