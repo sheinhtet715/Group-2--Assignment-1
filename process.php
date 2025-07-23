@@ -8,12 +8,13 @@
     $firstname   = $_POST['firstname']  ;
     $lastname    = $_POST['lastname']   ;
     $fathername  = $_POST['fathername'] ;
-    $dob = ($day !== '' || $month || '' || $year !== '')
-     ? "$day-$month-$year"
-     : '--';
+    
     $day         = $_POST['day']        ;
     $month       = $_POST['month']      ;
     $year        = $_POST['year']       ;
+    $dob = ($day !== '' || $month || '' || $year !== '')
+     ? "$day-$month-$year"
+     : '--';
 
     $mobile      = $_POST['mobile']     ;
     $email       = $_POST['email']      ;
