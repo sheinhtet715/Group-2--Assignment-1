@@ -40,7 +40,7 @@
         
         <label for="course">Course:</label>
         <select name="course" id="course"> 
-        <option value="select">Select Course</option>
+        <option value="">Select Course</option>
         <option value="HTML">HTML/CSS</option>
         <option value="AI">AI</option>
         <option value="PHP">PHP</option>
